@@ -1,0 +1,43 @@
+name: Tee Time Watcher
+
+on:
+  schedule:
+    # Every 5 minutes. GitHub doesn't guarantee this exactly — under load,
+    # scheduled runs can be delayed by several extra minutes, and GitHub
+    # does not support anything shorter than 5-minute increments anyway.
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}   # adds a manual "Run workflow" button for testing
+
+permissions:
+  contents: write   # needed so the workflow can save its memory of what it's already seen
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Run one check cycle
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python main.py --once
+
+      - name: Save updated memory of seen tee times
+        run: |
+          git config user.name "tee-time-watcher-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state.json
+          git diff --quiet --cached || git commit -m "Update seen tee times [skip ci]"
+          git push
