@@ -1,0 +1,166 @@
+{
+  "ntfy_topic": "CHANGE-ME-pick-a-private-topic-name",
+  "poll_interval_seconds": 60,
+  "courses": [
+    {
+      "name": "Harbor Links (Port Washington)",
+      "enabled": true,
+      "url": "https://harborlinksgc.cps.golf/onlineresweb/search-teetime",
+      "nav_style": "url_param",
+      "date_param": "searchDate",
+      "date_format": "%m/%d/%Y",
+      "max_days_ahead": 9,
+      "weekdays": [
+        5,
+        6
+      ],
+      "start_hour": 6,
+      "end_hour": 11
+    },
+    {
+      "name": "Bethpage Black",
+      "enabled": false,
+      "url": "PASTE-THE-BETHPAGE-BLACK-FOREUP-BOOKING-URL-HERE",
+      "nav_style": "click_next_day",
+      "next_day_selector": "button[aria-label='Next Day'], .next-day, .fa-chevron-right",
+      "max_days_ahead": 7,
+      "weekdays": [
+        5,
+        6
+      ],
+      "start_hour": 6,
+      "end_hour": 11
+    },
+    {
+      "name": "Bethpage Red",
+      "enabled": false,
+      "url": "PASTE-THE-BETHPAGE-RED-FOREUP-BOOKING-URL-HERE",
+      "nav_style": "click_next_day",
+      "next_day_selector": "button[aria-label='Next Day'], .next-day, .fa-chevron-right",
+      "max_days_ahead": 7,
+      "weekdays": [
+        5,
+        6
+      ],
+      "start_hour": 6,
+      "end_hour": 11
+    },
+    {
+      "name": "Bethpage Blue",
+      "enabled": false,
+      "url": "PASTE-THE-BETHPAGE-BLUE-FOREUP-BOOKING-URL-HERE",
+      "nav_style": "click_next_day",
+      "next_day_selector": "button[aria-label='Next Day'], .next-day, .fa-chevron-right",
+      "max_days_ahead": 7,
+      "weekdays": [
+        5,
+        6
+      ],
+      "start_hour": 6,
+      "end_hour": 11
+    },
+    {
+      "name": "Bethpage Green",
+      "enabled": false,
+      "url": "PASTE-THE-BETHPAGE-GREEN-FOREUP-BOOKING-URL-HERE",
+      "nav_style": "click_next_day",
+      "next_day_selector": "button[aria-label='Next Day'], .next-day, .fa-chevron-right",
+      "max_days_ahead": 7,
+      "weekdays": [
+        5,
+        6
+      ],
+      "start_hour": 6,
+      "end_hour": 11
+    },
+    {
+      "name": "Bethpage Yellow",
+      "enabled": false,
+      "url": "PASTE-THE-BETHPAGE-YELLOW-FOREUP-BOOKING-URL-HERE",
+      "nav_style": "click_next_day",
+      "next_day_selector": "button[aria-label='Next Day'], .next-day, .fa-chevron-right",
+      "max_days_ahead": 7,
+      "weekdays": [
+        5,
+        6
+      ],
+      "start_hour": 6,
+      "end_hour": 11
+    },
+    {
+      "name": "Middle Bay (GolfNow)",
+      "enabled": true,
+      "url": "https://www.golfnow.com/tee-times/facility/10430-the-golf-club-at-middle-bay/search",
+      "nav_style": "hash_param",
+      "date_param": "date",
+      "date_format": "%b %d %Y",
+      "max_days_ahead": 8,
+      "weekdays": [
+        5,
+        6
+      ],
+      "start_hour": 6,
+      "end_hour": 11
+    },
+    {
+      "name": "Skyway Golf Course (GolfNow)",
+      "enabled": true,
+      "url": "https://www.golfnow.com/tee-times/facility/13336-skyway-golf-course-at-lincoln-park-west/search",
+      "nav_style": "hash_param",
+      "date_param": "date",
+      "date_format": "%b %d %Y",
+      "max_days_ahead": 7,
+      "weekdays": [
+        5,
+        6
+      ],
+      "start_hour": 6,
+      "end_hour": 11
+    },
+    {
+      "name": "Saxon Woods (GolfNow)",
+      "enabled": true,
+      "url": "https://www.golfnow.com/tee-times/facility/3255-saxon-woods-golf-course/search",
+      "nav_style": "hash_param",
+      "date_param": "date",
+      "date_format": "%b %d %Y",
+      "max_days_ahead": 7,
+      "weekdays": [
+        5,
+        6
+      ],
+      "start_hour": 6,
+      "end_hour": 11
+    },
+    {
+      "name": "Clearview Park (GolfNow)",
+      "enabled": true,
+      "url": "https://www.golfnow.com/tee-times/facility/4047-clearview-park-golf-course/search",
+      "nav_style": "hash_param",
+      "date_param": "date",
+      "date_format": "%b %d %Y",
+      "max_days_ahead": 7,
+      "weekdays": [
+        5,
+        6
+      ],
+      "start_hour": 6,
+      "end_hour": 11
+    },
+    {
+      "name": "Douglaston (GolfNow)",
+      "enabled": true,
+      "url": "https://www.golfnow.com/tee-times/facility/5044-douglaston-golf-course/search",
+      "nav_style": "hash_param",
+      "date_param": "date",
+      "date_format": "%b %d %Y",
+      "max_days_ahead": 7,
+      "weekdays": [
+        5,
+        6
+      ],
+      "start_hour": 6,
+      "end_hour": 11
+    }
+  ]
+}
