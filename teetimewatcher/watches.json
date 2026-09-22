@@ -1,9 +1,0 @@
-[
-  {
-    "_comment": "This is an example entry — delete it or edit it. 'course' must exactly match a 'name' in config.json. start_hour/end_hour are optional; if omitted, that course's normal default window is used.",
-    "course": "Harbor Links (Port Washington)",
-    "date": "2026-09-26",
-    "start_hour": 6,
-    "end_hour": 11
-  }
-]
