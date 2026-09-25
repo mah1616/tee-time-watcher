@@ -134,7 +134,7 @@
     },
     {
       "name": "Clearview Park (GolfNow)",
-      "enabled": true,
+      "enabled": false,
       "url": "https://www.golfnow.com/tee-times/facility/4047-clearview-park-golf-course/search",
       "nav_style": "hash_param",
       "date_param": "date",
@@ -149,7 +149,7 @@
     },
     {
       "name": "Douglaston (GolfNow)",
-      "enabled": true,
+      "enabled": false,
       "url": "https://www.golfnow.com/tee-times/facility/5044-douglaston-golf-course/search",
       "nav_style": "hash_param",
       "date_param": "date",
